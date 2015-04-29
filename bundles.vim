@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Sensible defaults
 Plug 'tpope/vim-sensible'
 
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -23,6 +23,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 " rails support
 Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
 " bundler integration (e.g. :Bopen)
 Plug 'tpope/vim-bundler'
 " rake integration

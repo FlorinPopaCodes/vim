@@ -31,6 +31,13 @@ set scrolljump=5                " Lines to scroll when cursor leaves screen
 set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 set viminfo='100,n$HOME/.vim/files/info/viminfo
+
+" chars to show for list
+set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
+
+" Turn backup off, since most stuff are in git anyway...
+set nobackup
+set nowb
+set noswapfile
