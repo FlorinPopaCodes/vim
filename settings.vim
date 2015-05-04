@@ -30,9 +30,17 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 set scrolljump=5                " Lines to scroll when cursor leaves screen
 set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
-set list
 
-set viminfo='100,n$HOME/.vim/files/info/viminfo
+set list
+set ts=4                " number of spaces in a tab
+set sw=4                " number of spaces for indent
+set et                  " expand tabs into spaces
+
+" folding
+set foldcolumn=0        " columns for folding
+set foldmethod=indent
+set foldlevel=9
+set nofoldenable        "dont fold by default "
 
 " chars to show for list
 set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮

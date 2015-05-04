@@ -23,7 +23,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 " rails support
 Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
 " bundler integration (e.g. :Bopen)
 Plug 'tpope/vim-bundler'
 " rake integration
@@ -75,3 +74,5 @@ Plug 'chriskempson/base16-vim'
 Plug 'kana/vim-textobj-user'
 
 call plug#end()
+
+filetype plugin indent on
