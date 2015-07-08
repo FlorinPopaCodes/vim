@@ -62,6 +62,7 @@ Plug 'vim-scripts/jade.vim'
 Plug 'vitaly/vim-syntastic-coffee'
 Plug 'wavded/vim-stylus'
 Plug 'jbnicolai/rainbow_parentheses.vim'
+Plug 'freitass/todo.txt-vim'
 
 " Colorschemes
 Plug 'junegunn/seoul256.vim'
