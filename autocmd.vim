@@ -13,7 +13,6 @@ if has("autocmd")
     au BufEnter *.[ch]pp setl cindent
     au BufEnter Makefile setl ts=4 sts=4 sw=4 noet list
     au BufEnter *.rb setl ts=2 sw=2 expandtab
-    au BufEnter *.todo setl syntax=todo.txt
   augroup END
 
   " when enabling diff for a buffer it should be disabled when the
@@ -36,6 +35,7 @@ if has("autocmd")
 
   " preceding line best in a plugin but here for now.
   au BufNewFile,BufRead *.coffee set filetype=coffee
+  au BufNewFile,BufRead *.todo set filetype=todo.txt
 
   " Workaround vim-commentary for Haskell
   au FileType haskell setlocal commentstring=--\ %s
