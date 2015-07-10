@@ -21,6 +21,7 @@ endif
         \ 'dir': '\.git$\|\.hg$\|\.svn|\bower_components|\node_modules$',
         \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
+" TODO
 " rainbow parentheses
   au VimEnter * RainbowParenthesesToggle
   au Syntax * RainbowParenthesesLoadRound

@@ -69,10 +69,7 @@ Plug 'jbnicolai/rainbow_parentheses.vim'
 Plug 'freitass/todo.txt-vim'
 
 " Colorschemes
-Plug 'junegunn/seoul256.vim'
-Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
-Plug 'sjl/badwolf'
 Plug 'chriskempson/base16-vim'
 
 " Support

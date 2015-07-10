@@ -5,5 +5,6 @@ source $HOME/.vim/plugins.vim
 source $HOME/.vim/autocmd.vim
 
 " Default colorscheme
-colorscheme seoul256
-
+colorscheme gruvbox
+set background=dark
+set guifont=Inconsolata\ 13
