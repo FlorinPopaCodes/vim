@@ -19,6 +19,9 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'lervag/vimtex'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/unite-outline'
+Plug 'ujihisa/unite-colorscheme'
 
 " Ruby/Rails
 
