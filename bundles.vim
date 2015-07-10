@@ -18,6 +18,7 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'airblade/vim-gitgutter'
 " Plug 'lervag/vimtex'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'rking/ag.vim'
 
 " Ruby/Rails
 

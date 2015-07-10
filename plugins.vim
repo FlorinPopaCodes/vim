@@ -1,5 +1,8 @@
 " The Silver Searcher
 if executable('ag')
+  " Search in root over current dir.
+  let g:ag_working_path_mode="r"
+  " CtrlP configs
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
 
