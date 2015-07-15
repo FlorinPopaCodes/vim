@@ -21,13 +21,6 @@ endif
         \ 'dir': '\.git$\|\.hg$\|\.svn|\bower_components|\node_modules$',
         \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
-" TODO
-" rainbow parentheses
-  au VimEnter * RainbowParenthesesToggle
-  au Syntax * RainbowParenthesesLoadRound
-  au Syntax * RainbowParenthesesLoadSquare
-  au Syntax * RainbowParenthesesLoadBraces
-
 " syntastic
   let g:syntastic_enable_balloons = 1
   let g:syntastic_auto_jump=0

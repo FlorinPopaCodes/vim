@@ -19,7 +19,6 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'lervag/vimtex'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim'
-Plug 'Shougo/vimproc.vim'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/unite-outline'
 Plug 'ujihisa/unite-colorscheme'
@@ -67,7 +66,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/jade.vim'
 Plug 'vitaly/vim-syntastic-coffee'
 Plug 'wavded/vim-stylus'
-Plug 'jbnicolai/rainbow_parentheses.vim'
 Plug 'freitass/todo.txt-vim'
 
 " Colorschemes
@@ -76,6 +74,7 @@ Plug 'chriskempson/base16-vim'
 
 " Support
 Plug 'kana/vim-textobj-user'
+Plug 'Shougo/vimproc.vim'
 
 call plug#end()
 
