@@ -22,6 +22,7 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/unite-outline'
 Plug 'ujihisa/unite-colorscheme'
 Plug 'AndrewRadev/switch.vim'
+Plug 'skwp/greplace.vim'
 
 " Ruby/Rails
 
