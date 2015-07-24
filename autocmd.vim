@@ -1,20 +1,5 @@
 " AUTOCOMMANDS
 if has("autocmd")
-  augroup filetypedetect
-    au BufEnter *.markdown,*.mkd,*.md setl wrap tw=79
-    au BufEnter *.json setl ft=javascript
-    au BufEnter *.coffee setl sw=2 expandtab
-    au BufEnter *.py setl ts=4 sw=4 sts=4
-    au BufEnter *.php setl ts=4 sw=4 sts=4
-    au BufEnter *.js setl ts=2 sw=2 sts=2
-    au BufEnter *.html setl ts=4 sw=4 sts=4
-    au BufEnter *.tex setl wrap tw=79 fo=tcqor
-    au BufEnter *.[ch] setl cindent
-    au BufEnter *.[ch]pp setl cindent
-    au BufEnter Makefile setl ts=4 sts=4 sw=4 noet list
-    au BufEnter *.rb setl ts=2 sw=2 expandtab
-  augroup END
-
   " when enabling diff for a buffer it should be disabled when the
   " buffer is not visible anymore
   au BufHidden * if &diff == 1 | diffoff | setlocal nowrap | endif
@@ -34,13 +19,7 @@ if has("autocmd")
   au VimResized * exe "normal! \<c-w>="
 
   " preceding line best in a plugin but here for now.
-  au BufNewFile,BufRead *.coffee set filetype=coffee
   au BufNewFile,BufRead *.todo set filetype=todo.txt
-
-  " Workaround vim-commentary for Haskell
-  au FileType haskell setlocal commentstring=--\ %s
-  " Workaround broken colour highlighting in Haskell
-  au FileType haskell setlocal nospell
 
   " Stupid shift key fixes
   if has("user_commands")
