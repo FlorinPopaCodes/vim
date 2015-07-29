@@ -33,3 +33,10 @@ let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
   let g:syntastic_enable_signs=1
   let g:syntastic_error_symbol='✗'
   let g:syntastic_warning_symbol='⚠'
+
+" RSpec.vim mappings
+  map <Leader>t :call RunCurrentSpecFile()<CR>
+  map <Leader>s :call RunNearestSpec()<CR>
+  map <Leader>l :call RunLastSpec()<CR>
+  map <Leader>a :call RunAllSpecs()<CR>
+  let g:rspec_command = "Dispatch rspec {spec}"

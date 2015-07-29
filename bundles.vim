@@ -3,6 +3,11 @@ call plug#begin('~/.vim/plugged')
 " Sensible defaults
 Plug 'tpope/vim-sensible'
 
+" Support
+Plug 'kana/vim-textobj-user'
+Plug 'Shougo/vimproc.vim'
+Plug 'tpope/vim-dispatch'
+
 " Plug 'mhinz/vim-startify'
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
@@ -41,7 +46,7 @@ Plug 'apidock.vim'
 " toggle ruby blocks style
 Plug 'vim-scripts/blockle.vim'
 " lightweight Rspec runner for Vim
-Plug 'josemarluedke/vim-rspec'
+Plug 'thoughtbot/vim-rspec'
 
 " Syntax support
 Plug 'sheerun/vim-polyglot'
@@ -51,9 +56,6 @@ Plug 'freitass/todo.txt-vim'
 Plug 'morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
 
-" Support
-Plug 'kana/vim-textobj-user'
-Plug 'Shougo/vimproc.vim'
 
 call plug#end()
 
