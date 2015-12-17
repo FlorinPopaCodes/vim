@@ -7,4 +7,4 @@ source $HOME/.vim/autocmd.vim
 " Default colorscheme
 colorscheme gruvbox
 set background=dark
-set guifont=Inconsolata\ 11
+set guifont=Inconsolata\ 12

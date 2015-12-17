@@ -30,6 +30,7 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 set scrolljump=5                " Lines to scroll when cursor leaves screen
 set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
+set hidden                      " Hide any buffer without writing
 
 set list
 set ts=4                " number of spaces in a tab
@@ -40,7 +41,7 @@ set et                  " expand tabs into spaces
 set foldcolumn=0        " columns for folding
 set foldmethod=indent
 set foldlevel=9
-set nofoldenable        "dont fold by default "
+set nofoldenable        "dont fold by default
 
 " chars to show for list
 set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
@@ -49,3 +50,9 @@ set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
 set nobackup
 set nowb
 set noswapfile
+
+" Gvim cosmetics
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar

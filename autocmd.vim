@@ -33,4 +33,9 @@ if has("autocmd")
       command! -bang QA qa<bang>
       command! -bang Qa qa<bang>
   endif
+
+  " RoR autocompletion enabling
+  au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+  au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+  au FileType ruby,eruby let g:rubycomplete_rails = 1
 endif
