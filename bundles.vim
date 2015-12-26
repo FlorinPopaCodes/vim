@@ -7,6 +7,8 @@ Plug 'tpope/vim-sensible'
 Plug 'kana/vim-textobj-user'
 Plug 'Shougo/vimproc.vim'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-speeddating'
+Plug 'utl.vim'
 
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -26,8 +28,10 @@ Plug 'ujihisa/unite-colorscheme'
 Plug 'AndrewRadev/switch.vim'
 Plug 'skwp/greplace.vim'
 
-" Ruby/Rails
+" Evil
+Plug 'jceb/vim-orgmode'
 
+" Ruby/Rails
 " rails support
 Plug 'tpope/vim-rails'
 " bundler integration (e.g. :Bopen)
@@ -47,7 +51,6 @@ Plug 'thoughtbot/vim-rspec'
 
 " Syntax support
 Plug 'sheerun/vim-polyglot'
-Plug 'freitass/todo.txt-vim'
 
 " Colorschemes
 Plug 'morhetz/gruvbox'
