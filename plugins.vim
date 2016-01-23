@@ -2,12 +2,6 @@
 if executable('ag')
   " Search in root over current dir.
   let g:ag_working_path_mode="r"
-  " CtrlP configs
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
@@ -23,6 +17,23 @@ let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
   let g:ctrlp_custom_ignore = {
         \ 'dir': '\.git$\|\.hg$\|\.svn|\bower_components|\node_modules$',
         \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
+
+  if executable('ag')
+      let s:ctrlp_fallback = 'ag %s --nocolor -l -g ""'
+  elseif executable('ack-grep')
+      let s:ctrlp_fallback = 'ack-grep %s --nocolor -f'
+  elseif executable('ack')
+      let s:ctrlp_fallback = 'ack %s --nocolor -f'
+  else
+      let s:ctrlp_fallback = 'find %s -type f'
+  endif
+  let g:ctrlp_user_command = {
+      \ 'types': {
+          \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+          \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+      \ },
+      \ 'fallback': s:ctrlp_fallback
+  \ }
 
 " syntastic
   let g:syntastic_enable_balloons = 1
@@ -40,3 +51,7 @@ let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
   map <Leader>l :call RunLastSpec()<CR>
   map <Leader>a :call RunAllSpecs()<CR>
   let g:rspec_command = "Dispatch rspec {spec}"
+
+" Greplace
+  set grepprg=git\ grep
+  let g:grep_cmd_opts = '--line-number'
